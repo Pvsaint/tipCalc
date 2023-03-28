@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100;
+  background: url(./img/bg-img.jpg) no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 600px;
+  width: 400px;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 20px rgb(0, 0, 0, 0.5);
+  margin: 50px auto;
+  background-color: rgba(127, 255, 212, 0.11);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.wrapper {
+  width: 90%;
+}
+
+.infoDisplay {
+  width: 100%;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#billInput {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  align-self: flex-start;
+  border: none;
+  background: rgba(255, 255, 255, 0.151);
+  color: white;
+}
+
+#billInput:focus {
+  outline: none;
+  border-bottom: 5px solid green;
+}
+
+#billInput::placeholder {
+  color: white;
+}
+
+#calcBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  align-self: flex-start;
+  margin: 2rem 0;
+  color: green;
+  font-weight: 600;
+  box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.5);
+}
